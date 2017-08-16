@@ -14,7 +14,7 @@ where description='cheetos' GROUP BY warehouse.warehouse, products.description;
 
 
 4. Which warehouses have diet pepsi?
-SSELECT products.description , warehouse.warehouse FROM products 
+SELECT products.description , warehouse.warehouse FROM products 
 JOIN warehouse_product ON products.id=warehouse_product.product_id
 JOIN warehouse ON warehouse.id= warehouse_product.warehouse_id
 where description='diet pepsi' GROUP BY warehouse.warehouse, products.description;
